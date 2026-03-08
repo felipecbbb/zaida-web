@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Zaida Quevedo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Zaida Quevedo</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="quien-soy.html" class="nav-link">Quién soy</a></li>
+                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                <li><a href="terapia-online.html" class="nav-link">Terapia Online</a></li>
+                <li><a href="opiniones.html" class="nav-link">Opiniones</a></li>
+                <li><a href="contacto.html" class="nav-link nav-cta active">Contactar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header page-header--green">
+        <div class="container">
+            <h1>Contacta conmigo</h1>
+            <p>Da el primer paso hacia tu bienestar</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Zaida Quevedo</h2>
+                    <p class="contact-role">Psicoterapeuta y Pedagoga</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <span>info@zaidaquevedo.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <span>Contactar por teléfono</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="2" y1="20" x2="22" y2="20"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Sesiones Online</h4>
+                                <span>Mediante plataforma segura</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-note-box">
+                        <p>Escríbeme sin compromiso. Juntos encontraremos la mejor manera de ayudarte.</p>
+                    </div>
+
+                    <div class="payment-info">
+                        <h4>Formas de pago</h4>
+                        <div class="payment-methods">
+                            <span class="payment-badge">Bizum</span>
+                            <span class="payment-badge">Transferencia bancaria</span>
+                        </div>
+                        <p class="payment-note">El pago se realizará antes de la sesión.</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Envíame un mensaje</h3>
+                    <div class="form-group">
+                        <label for="name">Nombre *</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Servicio de interés</label>
+                            <select id="service" name="service">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="psicoterapia-adultos">Psicoterapia - Adultos</option>
+                                <option value="psicoterapia-adolescentes">Psicoterapia - Adolescentes</option>
+                                <option value="psicopedagogia">Psicopedagogía y Orientación Familiar</option>
+                                <option value="evaluacion-altas-capacidades">Evaluación - Altas Capacidades</option>
+                                <option value="evaluacion-tda">Evaluación - TDA/TDAH</option>
+                                <option value="evaluacion-otros">Evaluación - Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="modality">Modalidad preferida</label>
+                            <select id="modality" name="modality">
+                                <option value="">Selecciona modalidad</option>
+                                <option value="online">Online</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="indistinto">Me es indiferente</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Cuéntame brevemente en qué puedo ayudarte..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+                    <p class="form-privacy">Tus datos están protegidos bajo la Ley de Protección de Datos (LOPD).</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Zaida Quevedo</h3>
+                    <p>Psicoterapeuta y Pedagoga</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Inicio</a>
+                    <a href="quien-soy.html">Quién soy</a>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="terapia-online.html">Terapia Online</a>
+                    <a href="opiniones.html">Opiniones</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-legal">
+                    <p>Todas las sesiones se realizan bajo la Ley de Protección de Datos (LOPD) y el código deontológico.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
