@@ -30,6 +30,7 @@
 
     <!-- HERO -->
     <section class="hero">
+        <div class="sparkle-container" id="heroSparkles"></div>
         <div class="hero-container">
             <div class="hero-left">
                 <p class="hero-greeting">Bienvenida/o</p>
@@ -39,7 +40,7 @@
                 <a href="contacto.html" class="btn btn-primary">Pide tu cita</a>
             </div>
             <div class="hero-right">
-                <div class="hero-card">
+                <div class="hero-card reveal-right">
                     <p class="hero-description">
                         Mi especialidad es ayudar a las personas con dificultades en las relaciones
                         a encontrar herramientas y así superar los distintos baches de la vida.
@@ -55,11 +56,34 @@
         </div>
     </section>
 
+    <!-- TICKER -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span class="ticker-item">Psicoterapia <span class="dot"></span></span>
+            <span class="ticker-item">Teoría del Apego <span class="dot"></span></span>
+            <span class="ticker-item">Orientación Familiar <span class="dot"></span></span>
+            <span class="ticker-item">Altas Capacidades <span class="dot"></span></span>
+            <span class="ticker-item">Terapia Online <span class="dot"></span></span>
+            <span class="ticker-item">Bienestar Emocional <span class="dot"></span></span>
+            <span class="ticker-item">Enfoque Humanista <span class="dot"></span></span>
+            <span class="ticker-item">Espacio Seguro <span class="dot"></span></span>
+            <!-- Duplicado para loop continuo -->
+            <span class="ticker-item">Psicoterapia <span class="dot"></span></span>
+            <span class="ticker-item">Teoría del Apego <span class="dot"></span></span>
+            <span class="ticker-item">Orientación Familiar <span class="dot"></span></span>
+            <span class="ticker-item">Altas Capacidades <span class="dot"></span></span>
+            <span class="ticker-item">Terapia Online <span class="dot"></span></span>
+            <span class="ticker-item">Bienestar Emocional <span class="dot"></span></span>
+            <span class="ticker-item">Enfoque Humanista <span class="dot"></span></span>
+            <span class="ticker-item">Espacio Seguro <span class="dot"></span></span>
+        </div>
+    </div>
+
     <!-- PREVIEW: Quién soy -->
     <section class="home-preview">
         <div class="container">
             <div class="preview-grid">
-                <div class="preview-text">
+                <div class="preview-text reveal-left">
                     <h2>Comprometida con tu bienestar</h2>
                     <p>
                         Soy Psicoterapeuta y Pedagoga, especializada en la <strong>Terapia Basada en la Teoría del Apego (TBTA)</strong>,
@@ -68,7 +92,7 @@
                     </p>
                     <a href="quien-soy.html" class="btn btn-secondary">Conóceme mejor</a>
                 </div>
-                <div class="preview-visual">
+                <div class="preview-visual reveal-right">
                     <div class="preview-card-accent">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -81,15 +105,35 @@
         </div>
     </section>
 
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal delay-1">
+                    <h3><span class="counter" data-target="10">0</span>+</h3>
+                    <p>Años de experiencia</p>
+                </div>
+                <div class="stat-item reveal delay-2">
+                    <h3>Online y Presencial</h3>
+                    <p>Flexibilidad total para ti</p>
+                </div>
+                <div class="stat-item reveal delay-3">
+                    <h3>TBTA</h3>
+                    <p>Terapia Basada en la Teoría del Apego</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PREVIEW: Servicios -->
     <section class="home-services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2 class="section-title">Mis servicios</h2>
                 <div class="section-line"></div>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card reveal delay-1">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
@@ -99,7 +143,7 @@
                     <p>Sesiones para adultos y adolescentes, online y presenciales.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal delay-2">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
@@ -109,7 +153,7 @@
                     <p>Psicopedagogía y asesoramiento educativo para familias.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal delay-3">
                     <div class="service-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
@@ -126,7 +170,7 @@
     <!-- PREVIEW: Terapia Online -->
     <section class="home-online">
         <div class="container">
-            <div class="online-banner">
+            <div class="online-banner reveal-scale">
                 <div class="online-banner-text">
                     <h2>Terapia Online</h2>
                     <p>La terapia online me permite ofrecerte apoyo emocional estés donde estés. Misma calidad y calidez que una sesión presencial.</p>
@@ -144,8 +188,8 @@
     <!-- PREVIEW: Opiniones -->
     <section class="home-testimonial">
         <div class="container">
-            <div class="featured-testimonial">
-                <div class="quote-icon">"</div>
+            <div class="featured-testimonial reveal">
+                <div class="quote-icon">&ldquo;</div>
                 <p>
                     Mi experiencia con Zaida ha sido excepcional. Su enfoque profesional, empatía y habilidades
                     han sido fundamentales para mi bienestar emocional.
@@ -159,7 +203,7 @@
     <!-- CTA Final -->
     <section class="home-cta">
         <div class="container">
-            <div class="cta-box">
+            <div class="cta-box reveal-scale">
                 <h2>Da el primer paso hacia tu bienestar</h2>
                 <p>Escríbeme sin compromiso. Juntos encontraremos la mejor manera de ayudarte.</p>
                 <a href="contacto.html" class="btn btn-primary">Contactar ahora</a>
