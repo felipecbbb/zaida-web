@@ -13,7 +13,7 @@
     <!-- Navegación -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">Zaida Quevedo</a>
+            <a href="index.html" class="nav-logo">Zaida Quevedo <span>| Psicoterapeuta y Pedagoga</span></a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
                 <span></span><span></span><span></span>
             </button>
@@ -30,29 +30,23 @@
 
     <!-- HERO -->
     <section class="hero">
-        <div class="sparkle-container" id="heroSparkles"></div>
+        <div class="hero-bg">
+            <img src="img/therapy-session.jpg" alt="Consulta de psicoterapia">
+        </div>
         <div class="hero-container">
             <div class="hero-left">
-                <p class="hero-greeting">Bienvenida/o</p>
                 <h1 class="hero-name">Zaida Quevedo</h1>
                 <p class="hero-title">Psicoterapeuta y Pedagoga</p>
                 <p class="hero-subtitle">Online y Presencial</p>
                 <a href="contacto.html" class="btn btn-primary">Pide tu cita</a>
             </div>
             <div class="hero-right">
-                <div class="hero-card reveal-right">
-                    <p class="hero-description">
-                        Mi especialidad es ayudar a las personas con dificultades en las relaciones
-                        a encontrar herramientas y así superar los distintos baches de la vida.
-                    </p>
-                    <div class="hero-decoration"></div>
-                </div>
+                <p class="hero-description">
+                    Mi especialidad es ayudar a las personas con dificultades en las relaciones
+                    a encontrar herramientas y así superar los distintos baches de la vida.
+                </p>
+                <a href="quien-soy.html" class="hero-description-link">Descubre cómo puedo ayudarte &rarr;</a>
             </div>
-        </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-                <path d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
-            </svg>
         </div>
     </section>
 
@@ -134,33 +128,42 @@
             </div>
             <div class="services-grid">
                 <div class="service-card reveal delay-1">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <div class="icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a7 7 0 0 1 7 7c0 2.5-1.5 4.5-3 6s-2.5 3.5-4 5c-1.5-1.5-2.5-3.5-4-5s-3-3.5-3-6a7 7 0 0 1 7-7z"/>
+                            <path d="M9 10h6"/><path d="M12 7v6"/>
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                         </svg>
                     </div>
-                    <h3>Psicoterapia</h3>
-                    <p>Sesiones para adultos y adolescentes, online y presenciales.</p>
+                    <h3>Psicoterapia Online y Presencial</h3>
+                    <span class="service-for-tag">Adultos y Adolescentes</span>
+                    <p>Sesiones individuales adaptadas a ti, desde la comodidad de tu hogar o en consulta presencial. Enfoque basado en la Teoría del Apego.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card reveal delay-2">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    <div class="icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
                     </div>
-                    <h3>Orientación Familiar</h3>
-                    <p>Psicopedagogía y asesoramiento educativo para familias.</p>
+                    <h3>Psicopedagogía Orientación y Asesoramiento</h3>
+                    <span class="service-for-tag">Familias y Educadores</span>
+                    <p>Psicopedagogía y asesoramiento educativo para familias. Orientación en crianza, comunicación y dinámicas familiares.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
                 <div class="service-card reveal delay-3">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    <div class="icon-circle">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
                     </div>
                     <h3>Evaluación y Diagnóstico</h3>
-                    <p>Altas capacidades, TDA/TDAH y necesidades educativas especiales.</p>
+                    <span class="service-for-tag">Niños y Adolescentes</span>
+                    <p>Altas capacidades, TDA/TDAH y necesidades educativas especiales. Evaluaciones rigurosas con informes detallados.</p>
                     <a href="servicios.html" class="card-link">Saber más &rarr;</a>
                 </div>
             </div>
@@ -170,14 +173,30 @@
     <!-- PREVIEW: Terapia Online -->
     <section class="home-online">
         <div class="container">
-            <div class="online-banner reveal-scale">
+            <div class="online-banner">
+                <div class="online-banner-bg">
+                    <img src="img/meditation-calm.jpg" alt="Terapia online desde casa" loading="lazy">
+                </div>
                 <div class="online-banner-text">
                     <h2>Terapia Online</h2>
                     <p>La terapia online me permite acercarte la psicología a donde estés. Apoyo emocional inmediato con la misma calidad y calidez que una sesión presencial.</p>
-                    <a href="terapia-online.html" class="btn btn-primary">Descubre más</a>
-                </div>
-                <div class="online-banner-icon" style="opacity: 1; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.15);">
-                    <img src="img/woman-laptop.jpg" alt="Terapia online desde casa" style="width: 220px; height: 150px; object-fit: cover; display: block;" loading="lazy">
+                    <div class="online-banner-modes">
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                <polyline points="9 22 9 12 15 12 15 22"/>
+                            </svg>
+                            Consulta Presencial
+                        </span>
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            Sesiones Online
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -187,13 +206,13 @@
     <section class="home-testimonial">
         <div class="container">
             <div class="featured-testimonial reveal">
-                <div class="quote-icon">&ldquo;</div>
+                <div class="quote-icon">&#10077;</div>
                 <p>
                     Mi experiencia con Zaida ha sido excepcional. Su enfoque profesional, empatía y habilidades
                     han sido fundamentales para mi bienestar emocional.
                 </p>
-                <span class="author-name">M.D.</span>
-                <a href="opiniones.html" class="btn btn-secondary" style="margin-top: 24px;">Ver todas las opiniones</a>
+                <span class="author-name">&mdash; M.D.</span>
+                <a href="opiniones.html" class="btn btn-secondary">Ver todas las opiniones</a>
             </div>
         </div>
     </section>
