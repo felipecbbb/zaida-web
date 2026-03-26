@@ -155,7 +155,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 600; line-height
 }
 .hero-bg::after {
     content: ''; position: absolute; inset: 0;
-    background: rgba(249,247,242,0.82);
+    background: linear-gradient(160deg, rgba(249,247,242,0.78) 0%, rgba(245,241,234,0.85) 100%);
 }
 .hero-container {
     position: relative; z-index: 2;
