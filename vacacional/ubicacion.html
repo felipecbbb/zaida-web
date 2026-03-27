@@ -6,7 +6,7 @@
     <title>Ubicación | Casa Vegueta</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -50,7 +50,7 @@
                     </p>
                 </div>
                 <div class="history-visual">
-                    <div class="history-card">
+                    <div class="history-card reveal">
                         <span class="history-year">1478</span>
                         <p>Fundación del primer asentamiento castellano en Canarias</p>
                     </div>
@@ -59,27 +59,70 @@
         </div>
     </section>
 
+    <!-- Experiencias cerca -->
+    <section class="experiences">
+        <div class="container">
+            <div class="section-header" style="text-align:center;">
+                <span class="section-label">Qué hacer</span>
+                <h2>Experiencias cerca de Casa Vegueta</h2>
+                <hr class="section-rule centered">
+            </div>
+            <div class="experiences-grid">
+                <div class="experience-card reveal">
+                    <span class="experience-emoji">🏛️</span>
+                    <h3>Museos y patrimonio</h3>
+                    <p>Casa de Colón, Catedral de Santa Ana, CAAM y el Museo Canario, todo a pie desde la casa.</p>
+                </div>
+                <div class="experience-card reveal reveal-delay-1">
+                    <span class="experience-emoji">🍷</span>
+                    <h3>Gastronomía local</h3>
+                    <p>Restaurantes de cocina canaria e internacional en las plazas de Vegueta y Triana.</p>
+                </div>
+                <div class="experience-card reveal reveal-delay-2">
+                    <span class="experience-emoji">🏖️</span>
+                    <h3>Playa de Las Canteras</h3>
+                    <p>Una de las mejores playas urbanas de Europa, a 15 minutos en guagua o coche.</p>
+                </div>
+                <div class="experience-card reveal reveal-delay-3">
+                    <span class="experience-emoji">🌋</span>
+                    <h3>Roque Nublo y Tejeda</h3>
+                    <p>Excursión de día al corazón volcánico de Gran Canaria con paisajes espectaculares.</p>
+                </div>
+                <div class="experience-card reveal reveal-delay-4">
+                    <span class="experience-emoji">🏄</span>
+                    <h3>Surf y deportes acuáticos</h3>
+                    <p>Spots de surf reconocidos internacionalmente en la costa norte y este de la isla.</p>
+                </div>
+                <div class="experience-card reveal reveal-delay-1">
+                    <span class="experience-emoji">🌿</span>
+                    <h3>Jardín Botánico Viera y Clavijo</h3>
+                    <p>El jardín botánico más grande de España, con flora endémica canaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Qué hay cerca -->
     <section class="nearby">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header" style="text-align:center;">
                 <h2>Qué encontrarás cerca</h2>
-                <div class="section-line"></div>
+                <hr class="section-rule centered">
             </div>
             <div class="nearby-grid">
-                <div class="nearby-card">
+                <div class="nearby-card reveal">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 20h18"/><path d="M6 20V8l6-4 6 4v12"/><path d="M10 20v-4h4v4"/>
                         </svg>
                     </div>
                     <h3>Paseo marítimo</h3>
                     <p>A tan solo 300 metros. Paseos junto al mar y brisa atlántica.</p>
                     <span class="nearby-distance">300m</span>
                 </div>
-                <div class="nearby-card">
+                <div class="nearby-card reveal reveal-delay-1">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
                         </svg>
                     </div>
@@ -87,9 +130,9 @@
                     <p>Calles empedradas, plazas con encanto y arquitectura colonial.</p>
                     <span class="nearby-distance">En el barrio</span>
                 </div>
-                <div class="nearby-card">
+                <div class="nearby-card reveal reveal-delay-2">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
                         </svg>
                     </div>
@@ -97,9 +140,9 @@
                     <p>Gastronomía canaria e internacional a pocos pasos.</p>
                     <span class="nearby-distance">A pie</span>
                 </div>
-                <div class="nearby-card">
+                <div class="nearby-card reveal reveal-delay-3">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
                         </svg>
                     </div>
@@ -107,9 +150,9 @@
                     <p>Aparcamientos Vegueta S.L. - Parking cubierto muy próximo a la vivienda.</p>
                     <span class="nearby-distance">~12€/día</span>
                 </div>
-                <div class="nearby-card">
+                <div class="nearby-card reveal reveal-delay-4">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
                         </svg>
                     </div>
@@ -117,9 +160,9 @@
                     <p>Acceso rápido por carretera a todos los espacios naturales y paisajes de Gran Canaria.</p>
                     <span class="nearby-distance">Toda la isla</span>
                 </div>
-                <div class="nearby-card">
+                <div class="nearby-card reveal reveal-delay-1">
                     <div class="nearby-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
                         </svg>
                     </div>
@@ -135,7 +178,7 @@
     <section class="explore-island">
         <div class="container">
             <div class="explore-banner">
-                <h2>Explora Gran Canaria</h2>
+                <h2><em>Explora Gran Canaria</em></h2>
                 <p>
                     La vivienda está excelentemente comunicada por carretera para acceder cómoda y rápidamente
                     a los espacios naturales y singulares paisajes que ofrece la isla. Desde dunas de arena

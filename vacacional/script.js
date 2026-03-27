@@ -1,17 +1,27 @@
-// Menú móvil
+// Mobile menu
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.getElementById('navMenu');
 
+function closeMenu() {
+    navMenu.classList.remove('active');
+    navToggle.classList.remove('active');
+    document.body.classList.remove('menu-open');
+}
+
 if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
+        const isOpen = navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
+        document.body.classList.toggle('menu-open', isOpen);
     });
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-        });
+        link.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('active')) closeMenu();
+    });
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navMenu.classList.contains('active')) closeMenu();
     });
 }
 
@@ -19,28 +29,21 @@ if (navToggle && navMenu) {
 const navbar = document.getElementById('navbar');
 if (navbar) {
     window.addEventListener('scroll', () => {
-        navbar.style.boxShadow = window.scrollY > 50 ? '0 2px 20px rgba(0,0,0,0.08)' : 'none';
-    });
+        navbar.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
 }
 
-// Scroll animations
-const observer = new IntersectionObserver((entries) => {
+// Reveal on scroll
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll(
-    '.floor-card, .feature-item, .floor-detail, .nearby-card, .equipment-category, .stat, .room-card, .highlight, .service-detail, .benefit-card'
-).forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 // Booking form
 const bookingForm = document.getElementById('bookingForm');
@@ -50,7 +53,7 @@ if (bookingForm) {
         const btn = bookingForm.querySelector('button[type="submit"]');
         const originalText = btn.textContent;
         btn.textContent = 'Consulta enviada';
-        btn.style.background = '#B08D4A';
+        btn.style.background = 'var(--c-olive)';
         btn.disabled = true;
         setTimeout(() => {
             btn.textContent = originalText;
